@@ -1,10 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Blog Post - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+    <!-- Page content-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Post content-->
+                <article>
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">My Understanding of GIT</h1>
+                        <!-- Post meta content-->
+                        <div class="text-muted fst-italic mb-2">Posted on March 1, 2022 by Satya Abhilash</div>
+                    </header>
+                    <!-- Preview image figure-->
+                    <figure class="mb-4"><img class="img-fluid rounded"
+                                              src="https://miro.medium.com/max/1400/0*0bGgvQVttKvcr3qd.png"  alt="..."/>
+                    </figure>
+                    <!-- Post content-->
+                    <section class="mb-5">
+                        <p>Branches:</p>
+                        <p>There is a main branch which has our final work, and we can create new branches in the repo
+                            to
+                            make changes. Branches are way of saving our work in our repo but not in our main branch.
+                            After
+                            making the changes in the project we can merge our branches to main branch to finally deploy
+                            project. So typically branching means you diverge from the main line of development and
+                            continue
+                            to do work without messing with that main line.
+                            We can create branches using git branch “branch name” command. To switch branches, we can
+                            use
+                            git checkout “branch name”.</p>
+                        <p>Merge:</p>
+                        <p>Merge is used to join two or more development histories together. For example, git merge
+                            command
+                            lets us take the independent lines of development created by git branch and integrate them
+                            into
+                            a single branch. git merge takes two commit pointers, usually the branch tips, and will find
+                            a
+                            common base commit between them. Once Git finds a common base commit it will create a new
+                            "merge
+                            commit" that combines the changes of each queued merge commit sequence.
+                        </p>
+                        <p>Commit:</p>
+                        <p>
+                            The git commit command captures a snapshot of the project's currently staged changes.
+                            Committed
+                            snapshots can be thought of as “safe” versions of a project—Git will never change them
+                            unless
+                            you explicitly ask it to. Prior to the execution of git commit, the git add command is used
+                            to
+                            promote or 'stage' changes to the project that will be stored in a commit. These two
+                            commands
+                            git commit, and git add are two of the most frequently used. The command git commit -m
+                            “message”
+                            will let us make a change in the repo and it leaves a message in the folder where the
+                            changes
+                            were made.</p>
+                        <p>Tagging:</p>
+                        <p>
+                            The command git tag “name” is used to create tags in the repo. Tags are ref's that point to
+                            specific points in Git history. Tagging is generally used to capture a point in history that
+                            is
+                            used for a marked version release. A tag is like a branch that doesn’t change. Unlike
+                            branches,
+                            tags, after being created, have no further history of commits. To get list of tags use git
+                            tag
+                            command.</p>
+                        <p>Repository:</p>
+                        <p>
+                            A Git stores an information in a data structure called a repository. A Git repository is the
+                            .git/ folder inside a project. This repository tracks all changes made to files in your
+                            project,
+                            building a history over time. Meaning, if you delete the .git/ folder, then you delete your
+                            project’s history. In the main page of GitHub, we can repositories with different names. It
+                            can
+                            be either private or public.</p>
+
+                    </section>
+                </article>
+
+            </div>
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+                <!-- Search widget-->
+                <div class="card mb-4">
+                    <div class="card-header">My GitHub</div>
+                    <div class="card-body">
+                        https://github.com/SatyaAbhilash98
+                    </div>
+                </div>
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Contents</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>Branches</li>
+                                    <li>Merge</li>
+                                    <li>Repository</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>Commit</li>
+                                    <li>Taging</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widget-->
+                <div class="card mb-4">
+                    <div class="card-header">F-layout</div>
+                    <div class="card-body">
+                        This is the sample of F layout I used to design this page
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Thank You</p></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    </body>
+    </html>
+{% endblock %}

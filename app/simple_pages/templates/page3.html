@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+{% block content %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Blog Post - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+    <!-- Page content-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Post content-->
+                <article>
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">My Understanding of CI/CD</h1>
+                        <!-- Post meta content-->
+                        <div class="text-muted fst-italic mb-2">Posted on March 1, 2022 by Satya Abhilash</div>
+                    </header>
+                    <!-- Preview image figure-->
+                    <figure class="mb-4"><img class="img-fluid rounded"
+                                              src="https://miro.medium.com/max/1200/1*kg8aAUNxI055OhNhT04srQ.png"
+                                              alt="..."/>
+                    </figure>
+                    <!-- Post content-->
+                    <section class="mb-5">
+                        <p>CI/CD:</p>
+                        <p>
+                            First, I created a repository in the github then I created two apps in Heroku one for dev
+                            and
+                            one for production. Now from Heroku account settings I extracted Heroku API key then added
+                            to
+                            the git repo secrets. Next, I created a new repo in the docker hub and added docker username
+                            and
+                            passwords to the git repo secrets. After this if he run the docker container the app will be
+                            tested and will be ran in the Heroku dev app every time we pull the git repo and every time,
+                            we
+                            make changes and merge the prod app in the Heroku will be updated.
+                        </p>
+                        <p>
+                            When you set up automated builds, you create a list of branches and tags that you want to
+                            build
+                            into Docker images. When you push code to a source code branch (for example in GitHub) for
+                            one
+                            of those listed image tags, the push uses a webhook to trigger a new build, which produces a
+                            Docker image. The built image is then pushed to the Docker Hub registry.
+                        </p>
+                        <p>
+                            Continuous Integration is a software development practice where members of a team integrate
+                            their work frequently, usually each person integrates at least daily - leading to multiple
+                            integrations per day. Each integration is verified by an automated build. The term
+                            'Continuous
+                            Integration' originated with Kent Beck's Extreme Programming development process, as one of
+                            its
+                            original twelve practices.
+                        </p>
+                        <p>
+                            Best practices for Continuous integration
+                        </p>
+                        <p>
+                            Maintain a Single Source Repository.
+                        </p>
+                        <p>
+                            Automate the Build.
+                        </p>
+                        <p>
+                            Builds should be Self-Testing.
+                        </p>
+                        <p>
+                            Every Commit Should Build the Mainline on an Integration Machine
+                        </p>
+                        <p>
+                            Fix Broken Builds Immediately
+                        </p>
+                        <p>
+                            Keep the Build Fast
+                        </p>
+                        <p>
+                            Test in a Clone of the Production Environment
+                        </p>
+                        <p>
+                            Make it Easy for Anyone to Get the Latest Executable
+                        </p>
+                        <p>
+                            Automate the Deployment process
+                        </p>
+                        <p>
+                            Continuous Delivery is a software development discipline where you build software in such a
+                            way
+                            that the software can be released to production at any time. Continuous Delivery is
+                            sometimes
+                            confused with Continuous Deployment. Continuous Deployment means that every change goes
+                            through
+                            the pipeline and automatically gets put into production, resulting in many production
+                            deployments every day. Continuous Delivery just means that you are able to do frequent
+                            deployments but may choose not to do it, usually due to businesses preferring a slower rate
+                            of
+                            deployment. In order to do Continuous Deployment, you must be doing Continuous Delivery.
+                        </p>
+                    </section>
+                </article>
+
+            </div>
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+                <!-- Search widget-->
+                <div class="card mb-4">
+                    <div class="card-header">My Heroku</div>
+                    <div class="card-body">
+                        Check GitHub for Deployments
+                    </div>
+                </div>
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Contents</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>Description</li>
+                                    <li>Features</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled mb-0">
+                                    <li>Continuos Delivery</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widget-->
+                <div class="card mb-4">
+                    <div class="card-header">F-layout</div>
+                    <div class="card-body">
+                        This is the sample of F layout I used to design this page
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Thank You</p></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    </body>
+    </html>
+{% endblock %}

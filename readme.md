@@ -30,6 +30,7 @@
 ### GitHub Notes:  Set the action secrets repository in: -> settings -> actions -> secrets
 
 ## Running Locally
+## for branch testing
 
 1. To Build with docker compose:
    docker compose up --build
