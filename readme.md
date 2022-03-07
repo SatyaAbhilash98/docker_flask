@@ -1,6 +1,6 @@
 # Project Setup
-[![Production Workflow](https://github.com/kaw393939/docker_flask/actions/workflows/prod.yml/badge.svg)](https://github.com/kaw393939/docker_flask/actions/workflows/prod.yml)
-
+[![Development Workflow](https://github.com/SatyaAbhilash98/docker_flask/actions/workflows/dev.yml/badge.svg)](https://github.com/SatyaAbhilash98/docker_flask/actions/workflows/dev.yml)
+[![Production Workflow](https://github.com/SatyaAbhilash98/docker_flask/actions/workflows/prod.yml/badge.svg)](https://github.com/SatyaAbhilash98/docker_flask/actions/workflows/prod.yml)
 ## Setting up CI/CD
 
 1. Clone this repo to your local (DO NOT FORK THIS REPO, IF YOU DO YOU HAVE TO ENABLE ACTIONS BEFORE ANYTHING RUNS)
@@ -30,7 +30,7 @@
 ### GitHub Notes:  Set the action secrets repository in: -> settings -> actions -> secrets
 
 ## Running Locally
-## for branch testing
+
 
 1. To Build with docker compose:
    docker compose up --build
@@ -38,6 +38,6 @@
 
 .pylintrc is the config for pylint .coveragerc is the config for coverage setup.py is a config file for pytest
 
-[My App](https://sd56-testapp.herokuapp.com/)
+
 
 # Test Changedf
