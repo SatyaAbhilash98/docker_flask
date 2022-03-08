@@ -1,9 +1,9 @@
 # Project Setup
 [![Development Workflow](https://github.com/SatyaAbhilash98/docker_flask/actions/workflows/dev.yml/badge.svg)](https://github.com/SatyaAbhilash98/docker_flask/actions/workflows/dev.yml)
-[Development App](https://dashboard.heroku.com/apps/dev-sd56-app)
+[Development App](https://dev-sd56-app.herokuapp.com/)
 
 [![Production Workflow](https://github.com/SatyaAbhilash98/docker_flask/actions/workflows/prod.yml/badge.svg)](https://github.com/SatyaAbhilash98/docker_flask/actions/workflows/prod.yml)
-[Production App](https://dashboard.heroku.com/apps/prod-sd56-app)
+[Production App](https://prod-sd56-app.herokuapp.com/)
 
 ## Setting up CI/CD
 
