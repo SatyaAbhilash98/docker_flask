@@ -1,0 +1,289 @@
+{% extends "base.html" %}
+{% block content %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Blog Post - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+    <!-- Page content-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Post content-->
+                <article>
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Glossory of OOP term with definitions</h1>
+                        <!-- Post meta content-->
+                        <div class="text-muted fst-italic mb-2">Posted on March 25, 2022 by Satya Abhilash</div>
+                    </header>
+                    <!-- Preview image figure-->
+                    <figure class="mb-4">
+                        <img src="{{ url_for('static', filename='images/oop.jpg') }}" class="d-block w-100" alt="...">
+                    </figure>
+                    <!-- Post content-->
+                    <section class="mb-5">
+                        <p>PyLint :</p>
+                        <p>
+                            Pylint is a Python static code analysis tool which looks for programming errors, helps
+                            enforcing a coding standard, sniffs for code smells and offers simple refactoring
+                            suggestions.
+                        </p>
+                        <p>
+
+                            If you’re coding in Java the compiler will usually lend a helping hand. But if you’re coding
+                            in a
+                            dynamic language like Python you’re on your own: you don’t have a compiler to catch bugs for
+                            you.The
+                            next best thing is a lint tool that uses heuristics to catch bugs in your code. One such
+                            tool is Pylint.
+                        </p>
+                        <p>
+                            To Install Pylint- pip install pylint<br>
+                            To Run Pylint- pylint fileName.py<br>
+                            To Run GUI- pylint-gui<br>
+                        </p>
+
+                        <p>Instantiation :</p>
+                        <p>
+                            Instantiate (a verb) and instantiation (the noun) in computer science refer to the creation
+                            of an object (or an “instance” of a given class) in an object-oriented programming (OOP)
+                            language. Referencing a class declaration, an instantiated object is named and created, in
+                            memory or on disk. Resources are allocated for it, it gains a place in the general codebase
+                            as a whole and it fills a role in what the programmers are constructing. It also is
+                            delineated or identified with its own attributes.
+                        </p>
+                        <p>Object :</p>
+                        <p>
+                            Object is an instance of a class. An object in OOPS is nothing but a self-contained
+                            component which consists of methods and properties to make a particular type of data useful.
+                            For example color name, table, bag, barking. When you send a message to an object, you are
+                            asking the object to invoke or execute one of its methods as defined in the class.
+                        </p>
+
+                        <p>Namespace :</p>
+                        <p>
+                            A namespace is a declarative region that provides a scope to the identifiers (the names of
+                            types, func
+                        <p>Class :</p>
+                        <p>
+                            Class are a blueprint or a set of instructions to build a specific type of object. It is a
+                            basic concept of Object-Oriented Programming which revolve around the real-life entities.
+                            Class in Java determines how an object will behave and what the object will contain.
+                            options, variables, etc) inside it. Namespaces are used to organize code into
+                            logical groups and to prevent name collisions that can occur especially when your code base
+                            includes multiple libraries. All identifiers at namespace scope are visible to one another
+                            without qualification. Identifiers outside the namespace can access the members by using the
+                            fully qualified name for each identifier, for example std::vector
+                            vec;, or else by a using Declaration for a single identifier (using
+                            std::string), or a using Directive for all the identifiers in the namespace (using
+                            namespace std;). Code in header files should always use the fully qualified namespace
+                            name.
+                        </p>
+                        <p>Constructor :</p>
+                        <p>
+                            A constructor resembles an instance method, but it differs from a method in that it has no
+                            explicit return type, it is not implicitly inherited and it usually has different rules for
+                            scope modifiers. Constructors often have the same name as the declaring class. They have the
+                            task of initializing the object's data members and of establishing the invariant of the
+                            class, failing if the invariant is invalid. A properly written constructor leaves the
+                            resulting object in a valid state. Immutable objects must be initialized in a constructor.
+                        </p>
+                        <p>Fixture :</p>
+                        <p>
+                            The purpose of a test fixture is to ensure that there is a well known and fixed environment
+                            in which tests are run so that results are repeatable. Some people call this the test
+                            context.
+
+                            Examples of fixtures:
+
+                            Loading a database with a specific, known set of data
+                            Erasing a hard disk and installing a known clean operating system installation
+                            Copying a specific known set of files
+                            Preparation of input data and set-up/creation of fake or mock objects
+                        </p>
+                        <p>Type Hint :</p>
+                        <p>
+                            In simple word, type hinting means providing hints to function to only accept the given data
+                            type.
+                            In technical word we can say that Type Hinting is method by which we can force function to
+                            accept the desired data type.
+                        </p>
+                        <p>Type Cast :</p>
+                        <p>
+                            Typecast is a way of changing an object from one data type to the next. It is used in
+                            computer programming to ensure a function handles the variables correctly. A typecast
+                            example is the transformation of an integer into a string.
+                        </p>
+                        <p>Unit Test :</p>
+                        <p>
+                            Unit testing aims to ensure that each individual part of a program works correct in
+                            isolation
+
+                            Unit testing should assure correct behaviour of the given unit before it is integrated with
+                            other units
+
+                            Unit testing is black box testing
+                        </p>
+                        <p>Static :</p>
+                        <p>
+                            In object-oriented programming, there is also the concept of a static member variable, which
+                            is a "class variable" of a statically defined class, i.e., a member variable of a given
+                            class which is shared across all instances (objects), and is accessible as a member variable
+                            of these objects.
+                        </p>
+                        <p>Instance Method :</p>
+                        <p>
+                            An instance method is a method that belongs to instances of a class, not to the class
+                            itself. To define an instance method, just omit static from the method heading. Within the
+                            method definition, you refer to variables and methods in the class by their names, without a
+                            dot.
+                        </p>
+                        <p>Instance Property :</p>
+                        <p>
+                            A typical property declared in a class is an instance property, meaning that you have a copy
+                            of that property's value for each instance of the class. You can also define static
+                            properties, which are properties that have a single value for the entire class, regardless
+                            of the number of instances of the class that exist.
+                        </p>
+                        <p>Static Method :</p>
+                        <p>
+                            A static method (or static function) is a method defined as a member of an object but is
+                            accessible directly from an API object's constructor, rather than from an object instance
+                            created via the constructor.
+                        </p>
+                        <p>Static Property :</p>
+                        <p>
+                            Static methods are often utility functions, such as functions to create or clone objects,
+                            whereas static properties are useful for caches, fixed-configuration, or any other data you
+                            don't need to be replicated across instances.
+                        </p>
+                        <p>Encapsulation :</p>
+                        <p>
+                            Encapsulation is one of the fundamental concepts in object-oriented programming (OOP). It
+                            describes the idea of wrapping data and the methods that work on data within one unit. This
+                            puts restrictions on accessing variables and methods directly and can prevent the accidental
+                            modification of data. To prevent accidental change, an object’s variable can only be changed
+                            by an object’s method. Those types of variables are known as private variable. A class is an
+                            example of encapsulation as it encapsulates all the data that is member functions,
+                            variables, etc.
+                        </p>
+                        <p>Inheritance :</p>
+                        <p>
+                            Inheritance is the capability of one class to derive or inherit the properties from another
+                            class. The benefits of inheritance are:
+                            1. It represents real-world relationships well.
+                            2. It provides reusability of a code. We don’t have to write the same code again and again.
+                            Also, it allows us to add more features to a class without modifying it.
+                            3. It is transitive in nature, which means that if class B inherits from another class A,
+                            then all the subclasses of B would automatically inherit from class A.
+                        </p>
+                        <p>Abstraction :</p>
+                        <p>
+                            An abstract class can be considered as a blueprint for other classes. It allows you to
+                            create a set of methods that must be created within any child classes built from the
+                            abstract class. A class which contains one or more abstract methods is called an abstract
+                            class. An abstract method is a method that has a declaration but does not have an
+                            implementation. While we are designing large functional units we use an abstract class. When
+                            we want to provide a common interface for different implementations of a component, we use
+                            an abstract class.
+                        </p>
+                        <p>Polymorphism :</p>
+                        <p>
+                            The word polymorphism means having many forms. In programming, polymorphism means the same
+                            function name (but different signatures) being used for different types.
+                        </p>
+                        <p>Overview of SOLID :</p>
+                        <p>
+                            The SOLID principle helps in reducing tight coupling. Tight coupling means a group of
+                            classes are highly dependent on one another which you should avoid in your code. Opposite of
+                            tight coupling is loose coupling and your code is considered as a good code when it has
+                            loosely-coupled classes. Loosely coupled classes minimize changes in your code, helps in
+                            making code more reusable, maintainable, flexible and stable.
+                        </p>
+                        <p>Overview of Design Pattern :</p>
+                        <p>
+                            Design Patterns is the most essential part of Software Engineering, as they provide the
+                            general repeatable solution to a commonly occurring problem in software design.
+
+                            They usually represent some of the best practices adopted by experienced object-oriented
+                            software developers.
+                        </p>
+                    </section>
+                </article>
+
+            </div>
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+                <!-- Search widget-->
+                <div class="card mb-4">
+                    <div class="card-header">What is OOP</div>
+                    <div class="card-body">
+                        Object-oriented programming (OOP) is a computer programming model that organizes software design
+                        around data, or objects, rather than functions and logic.
+                    </div>
+                </div>
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Contents</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <ul class="list-unstyled mb-0">
+                                    <li>Pylint</li>
+                                    <li>Instantiation</li>
+                                    <li>Object</li>
+                                    <li>Class</li>
+                                    <li>Namespace</li>
+                                    <li>Constructor</li>
+                                    <li>Fixture</li>
+                                    <li>Type Hint</li>
+                                    <li>Type Cast</li>
+                                    <li>Overview of Solid</li>
+                                    <li>Unit Test</li>
+                                    <li>Static</li>
+                                    <li>Instance Method</li>
+                                    <li>Instance Property</li>
+                                    <li>Static Method</li>
+                                    <li>Static Property</li>
+                                    <li>Encapsulation</li>
+                                    <li>Inheritance</li>
+                                    <li>Abstraction</li>
+                                    <li>Polymorphism</li>
+                                    <li>Overview of Design Pattern</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Side widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">References</div>
+                        <div class="card-body">
+                            https://www.techtarget.com/searchapparchitecture/definition/object-oriented-programming-OOP#:~:text=Object%2Doriented%20programming%20(OOP)%20is%20a%20computer%20programming%20model,has%20unique%20attributes%20and%20behavior.
+                            https://en.wikipedia.org/wiki/Object-oriented_programming
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Thank You</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+    </html>
+{% endblock %}
