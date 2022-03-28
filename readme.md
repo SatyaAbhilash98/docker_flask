@@ -1,6 +1,9 @@
 # Project Setup
 [![Development Workflow](https://github.com/SatyaAbhilash98/docker_flask/actions/workflows/dev.yml/badge.svg)](https://github.com/SatyaAbhilash98/docker_flask/actions/workflows/dev.yml)
+[Development App](https://dev-sd56-app.herokuapp.com/)
+
 [![Production Workflow](https://github.com/SatyaAbhilash98/docker_flask/actions/workflows/prod.yml/badge.svg)](https://github.com/SatyaAbhilash98/docker_flask/actions/workflows/prod.yml)
+[Production App](https://prod-sd56-app.herokuapp.com/)
 ## Setting up CI/CD
 
 1. Clone this repo to your local (DO NOT FORK THIS REPO, IF YOU DO YOU HAVE TO ENABLE ACTIONS BEFORE ANYTHING RUNS)
