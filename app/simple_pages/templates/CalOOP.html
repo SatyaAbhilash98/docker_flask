@@ -174,6 +174,8 @@
                             <div class="col">
                                 <ul class="list-unstyled mb-0">
                                     <li>Encapsulation</li>
+                                    <img src="{{ url_for('static', filename='images/encap.png') }}" style=" object-fit: cover; height: 12vw "
+                                         alt="...">
                                     <pre><code>class Summation(Calculator):
     def calculate_res(self):
         sum_values = 0.0
@@ -182,8 +184,12 @@
         return sum_values
             </code></pre>
                                     <li>Inheritance</li>
+                                    <img src="{{ url_for('static', filename='images/inherit.png') }}" style=" object-fit: cover; height: 12vw "
+                                         alt="...">
                                     from calculator.operations import Add, Sub, Mul, Div
                                     <li>Abstraction</li>
+                                    <img src="{{ url_for('static', filename='images/abs.jpg') }}" style=" object-fit: cover; height: 12vw "
+                                         alt="...">
                                      <pre><code>
 def add(num_list):
 
@@ -192,6 +198,8 @@ def add(num_list):
 
             </code></pre>
                                     <li>Polymorphism</li>
+                                    <img src="{{ url_for('static', filename='images/poly.png') }}" style=" object-fit: cover; height: 12vw "
+                                         alt="...">
                                     We did not use polymorphism in calculator program
                                 </ul>
                         </div>
