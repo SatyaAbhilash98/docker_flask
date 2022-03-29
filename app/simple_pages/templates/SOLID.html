@@ -29,7 +29,7 @@
                     </header>
                     <!-- Preview image figure-->
                     <figure class="mb-4">
-                        <img src="{{ url_for('static', filename='images/SOLID.png') }}" class="d-block w-100" alt="...">
+                        <img src="{{ url_for('static', filename='images/SOLID.jpeg') }}" class="d-block w-100" alt="...">
                     </figure>
                     <!-- Post content-->
                     <section class="mb-5">
@@ -112,6 +112,20 @@
         return add_res
         return add_res</code></pre>
                                     <li>Liskov’s Substitution Principle</li>
+                                    <pre><code>from calculator.operations import Add, Sub, Mul, Div
+class Calculator:
+    """ The Base abstract class for calculation"""
+
+    num_list = []
+
+    def __init__(self, num_list):
+        """constructor for calculation class"""
+        self.num_list = num_list
+        self.values_list = Calculator.float_conversion(num_list)
+
+    @classmethod
+    def create(cls, num_list):
+        return cls(num_list)</code></pre>
                                     <li>Interface Segregation Principle</li>
                                     <li>Dependency Inversion Principle</li>
                                 </ul>
