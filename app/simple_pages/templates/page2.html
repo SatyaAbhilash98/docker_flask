@@ -35,46 +35,55 @@
                     <section class="mb-5">
                         <p>Python/Flask :</p>
                         <p>
-                        PyTest is a testing framework that allows users to write test codes using Python programming
-                        language. It helps you to write simple and scalable test cases for databases, APIs, or UI.
-                        PyTest is mainly used for writing tests for APIs. It helps to write tests from simple unit tests
-                        to complex functional tests.
+                            PyTest is a testing framework that allows users to write test codes using Python programming
+                            language. It helps you to write simple and scalable test cases for databases, APIs, or UI.
+                            PyTest is mainly used for writing tests for APIs. It helps to write tests from simple unit
+                            tests
+                            to complex functional tests.
                         </p>
                         <p>
-                        In my project I created 5 webpages with one homepage and 4 pages explaining the stuff I learnt
-                        in the web systems development class. I used Z layout to create the home page and F layout for
-                        the remaining pages. To test the webpages used a python file called pages_test.py in this file I
-                        defined several functions to test each webpage response and data of the webpages.
+                            In my project I created 5 webpages with one homepage and 4 pages explaining the stuff I
+                            learnt
+                            in the web systems development class. I used Z layout to create the home page and F layout
+                            for
+                            the remaining pages. To test the webpages used a python file called pages_test.py in this
+                            file I
+                            defined several functions to test each webpage response and data of the webpages.
                         </p>
                         <p>
-                        In the project file <- we have .github file in which we have dev.yml and prod.yml.
+                            In the project file <- we have .github file in which we have dev.yml and prod.yml.
                         </p>
                         <p>
-                        dev.yml <- will have developing code in which we will link our Heroku and Docker container where
-                        test runs on ubuntu
+                            dev.yml <- will have developing code in which we will link our Heroku and Docker container
+                            where
+                            test runs on ubuntu
                         </p>
                         <p>
-                        Prod.yml file <- will be running on ubuntu it has all the access to Heroku and docker hub
-                        whatever is tested and satisfied with dev app will be finally deployed in the prod app.
+                            Prod.yml file <- will be running on ubuntu it has all the access to Heroku and docker hub
+                            whatever is tested and satisfied with dev app will be finally deployed in the prod app.
                         </p>
                         <p>
-                        In app folder <- we have our pages, inside pages we have all the 5 html files of the webpages
+                            In app folder <- we have our pages, inside pages we have all the 5 html files of the
+                            webpages
                         </p>
                         <p>
-                        In tests folder <- we have init.py which will run the tests and testing.py which will test the
-                        webpages we created in the app templates.
+                            In tests folder <- we have init.py which will run the tests and testing.py which will test
+                            the
+                            webpages we created in the app templates.
                         </p>
                         <p>
-                        docker-compose.yml <- Orchestration file that contains the configuration to develop locally, it
-                        overrides the Dockerfile to run the flask development server instead of running the gunicorn
-                        server that is used for hosting on Heroku
+                            docker-compose.yml <- Orchestration file that contains the configuration to develop locally,
+                            it
+                            overrides the Dockerfile to run the flask development server instead of running the gunicorn
+                            server that is used for hosting on Heroku
                         </p>
                         <p>
-                        Dockerfile <-File used to create an image to run in a container that runs the program
+                            Dockerfile <-File used to create an image to run in a container that runs the program
                         </p>
                         <p>
-                        Readme file <- this is used to see the work in the summarized manner and some important things
-                        like how to start the app and how to use the app will be mentioned inside this
+                            Readme file <- this is used to see the work in the summarized manner and some important
+                            things
+                            like how to start the app and how to use the app will be mentioned inside this
                         </p>
                     </section>
                 </article>
@@ -86,7 +95,10 @@
                 <div class="card mb-4">
                     <div class="card-header">Python/Flask</div>
                     <div class="card-body">
-                        Check GitHub Repo
+                        Flask is a micro web framework written in Python. It is classified as a microframework because
+                        it does not require particular tools or libraries. It has no database abstraction layer, form
+                        validation, or any other components where pre-existing third-party libraries provide common
+                        functions.
                     </div>
                 </div>
                 <!-- Categories widget-->
@@ -94,16 +106,26 @@
                     <div class="card-header">Contents</div>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-10">
                                 <ul class="list-unstyled mb-0">
                                     <li>PyTest</li>
                                     <li>Pages</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-6">
-                                <ul class="list-unstyled mb-0">
                                     <li>Testing</li>
                                     <li>ProjectFiles</li>
+                                    <pre><code>
+                                        version: "3.2"
+services:
+  flask:
+    build: .
+    restart: always
+    ports:
+      - 80:5000
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    command: ["flask", "run"]
+    volumes:
+      - .:/home/myuser
+                                    </code></pre>
                                 </ul>
                             </div>
                         </div>
@@ -111,9 +133,9 @@
                 </div>
                 <!-- Side widget-->
                 <div class="card mb-4">
-                    <div class="card-header">F-layout</div>
+                    <div class="card-header">References</div>
                     <div class="card-body">
-                        This is the sample of F layout I used to design this page
+                        https://en.wikipedia.org/wiki/Flask_(web_framework)
                     </div>
                 </div>
             </div>

@@ -29,36 +29,48 @@
                     </header>
                     <!-- Preview image figure-->
                     <figure class="mb-4">
-                        <img src="{{ url_for('static', filename='images/docker.png') }}" class="d-block w-100" alt="...">
+                        <img src="{{ url_for('static', filename='images/docker.png') }}" class="d-block w-100"
+                             alt="...">
                     </figure>
                     <!-- Post content-->
                     <section class="mb-5">
                         <p>Container :</p>
                         <p>
-                        A container is a standard unit of software that packages up code and all its dependencies, so
-                        the application runs quickly and reliably from one computing environment to another. A Docker
-                        container image is a lightweight, standalone, executable package of software that includes
-                        everything needed to run an application: code, runtime, system tools, system libraries and
-                        settings. In my project we are using ngix flask container to create a container which will run
-                        on port 80. To run the container, we need to use docker run -d -p 80:80 docker/name command. To
-                        remove container docker kill container id. To check all the containers that are running docker ps.
+                            A container is a standard unit of software that packages up code and all its dependencies,
+                            so
+                            the application runs quickly and reliably from one computing environment to another. A
+                            Docker
+                            container image is a lightweight, standalone, executable package of software that includes
+                            everything needed to run an application: code, runtime, system tools, system libraries and
+                            settings. In my project we are using ngix flask container to create a container which will
+                            run
+                            on port 80. To run the container, we need to use docker run -d -p 80:80 docker/name command.
+                            To
+                            remove container docker kill container id. To check all the containers that are running
+                            docker ps.
                         </p>
                         <p>Images :</p>
                         <p>
-                        A Docker image is a read-only template that contains a set of instructions for creating a
-                        container that can run on the Docker platform. It provides a convenient way to package up
-                        applications and preconfigured server environments, which you can use for your own private use
-                        or share publicly with other Docker users. In my project I created a test_app repository in my
-                        docker hub it has latest image in which it uses flask environment to run my python codes for the
-                        deployment of the app. The link to the project repo is
-                        https://hub.docker.com/repository/docker/savage23/test_app.
+                            A Docker image is a read-only template that contains a set of instructions for creating a
+                            container that can run on the Docker platform. It provides a convenient way to package up
+                            applications and preconfigured server environments, which you can use for your own private
+                            use
+                            or share publicly with other Docker users. In my project I created a test_app repository in
+                            my
+                            docker hub it has latest image in which it uses flask environment to run my python codes for
+                            the
+                            deployment of the app. The link to the project repo is
+                            https://hub.docker.com/repository/docker/savage23/test_app.
                         </p>
                         <p>Commands :</p>
                         <p>
-                        Commands to start the project is docker compose up –build it will directly access dockerFile in
-                        the project and executes the code inside it. To login to docker use docker login command and
-                        give the credentials of the docker hub. To pull an image use docker pull “image name”. To run a
-                        container use docker run -it -d “name”. To check version of docker use docker – version command.
+                            Commands to start the project is docker compose up –build it will directly access dockerFile
+                            in
+                            the project and executes the code inside it. To login to docker use docker login command and
+                            give the credentials of the docker hub. To pull an image use docker pull “image name”. To
+                            run a
+                            container use docker run -it -d “name”. To check version of docker use docker – version
+                            command.
                         </p>
                     </section>
                 </article>
@@ -70,6 +82,10 @@
                 <div class="card mb-4">
                     <div class="card-header">My DockerHub</div>
                     <div class="card-body">
+                        Docker is a set of platform as a service products that use OS-level virtualization to deliver
+                        software in packages called containers. The service has both free and premium tiers. The
+                        software that hosts the containers is called Docker Engine. It was first started in 2013 and is
+                        developed by Docker, Inc.
                         https://hub.docker.com/u/savage23
                     </div>
                 </div>
@@ -82,12 +98,11 @@
                                 <ul class="list-unstyled mb-0">
                                     <li>Containers</li>
                                     <li>Images</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-6">
-                                <ul class="list-unstyled mb-0">
                                     <li>Commands</li>
-
+                                    <img src="{{ url_for('static', filename='images/docker2.png') }}" style=" object-fit: cover; height: 12vw "
+                                         alt="...">
+                                    <img src="{{ url_for('static', filename='images/docker3.png') }}" style=" object-fit: cover; height: 12vw "
+                                         alt="...">
                                 </ul>
                             </div>
                         </div>
@@ -95,9 +110,9 @@
                 </div>
                 <!-- Side widget-->
                 <div class="card mb-4">
-                    <div class="card-header">F-layout</div>
+                    <div class="card-header">References</div>
                     <div class="card-body">
-                        This is the sample of F layout I used to design this page
+                        https://en.wikipedia.org/wiki/Docker_(software)
                     </div>
                 </div>
             </div>
