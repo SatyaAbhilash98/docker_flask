@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% block content %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Blog Post - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+    <!-- Page content-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Post content-->
+                <article>
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">How the Calculator Demonstrates SOLID</h1>
+                        <!-- Post meta content-->
+                        <div class="text-muted fst-italic mb-2">Posted on March 25, 2022 by Satya Abhilash</div>
+                    </header>
+                    <!-- Preview image figure-->
+                    <figure class="mb-4">
+                        <img src="{{ url_for('static', filename='images/SOLID.jpeg') }}" class="d-block w-100" alt="...">
+                    </figure>
+                    <!-- Post content-->
+                    <section class="mb-5">
+                        <p>Single Responsibility Principle (SRP) :</p>
+                        <p>
+                            This principle states that “a class should have only one reason to change” which means every
+                            class should have a single responsibility or single job or single purpose. Take the example
+                            of developing software. The task is divided into different members doing different things as
+                            front-end designers do design, the tester does testing and backend developer takes care of
+                            backend development part then we can say that everyone has a single job or responsibility.
+                        </p>
+                        <p>Open/Closed Principle :</p>
+                        <p>
+                            This principle states that “software entities (classes, modules, functions, etc.) should be
+                            open for extension, but closed for modification” which means you should be able to extend a
+                            class behavior, without modifying it.
+                        </p>
+                        <p>Liskov’s Substitution Principle :</p>
+                        <p>
+                            The principle was introduced by Barbara Liskov in 1987 and according to this principle
+                            “Derived or child classes must be substitutable for their base or parent classes“. This
+                            principle ensures that any class that is the child of a parent class should be usable in
+                            place of its parent without any unexpected behavior.
+                        </p>
+                        <p>Interface Segregation Principle :</p>
+                        <p>
+                            This principle is the first principle that applies to Interfaces instead of classes in SOLID
+                            and it is similar to the single responsibility principle. It states that “do not force any
+                            client to implement an interface which is irrelevant to them“. Here your main goal is to
+                            focus on avoiding fat interface and give preference to many small client-specific
+                            interfaces. You should prefer many client interfaces rather than one general interface and
+                            each interface should have a specific responsibility.
+                        </p>
+                        <p>Dependency Inversion Principle :</p>
+                        <p>
+                            Before we discuss this topic keep in mind that Dependency Inversion and Dependency Injection
+                            both are different concepts. Most of the people get confused about it and consider both are
+                            the same. Now two key points are here to keep in mind about this principle
+
+                            High-level modules/classes should not depend on low-level modules/classes. Both should
+                            depend upon abstractions.
+                            Abstractions should not depend upon details. Details should depend upon abstractions.
+                        </p>
+                    </section>
+                </article>
+
+            </div>
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+                <!-- Search widget-->
+                <div class="card mb-4">
+                    <div class="card-header">SOLID</div>
+                    <div class="card-body">
+                        The SOLID principle helps in reducing tight coupling. Tight coupling means a group of classes
+                        are highly dependent on one another which you should avoid in your code. Opposite of tight
+                        coupling is loose coupling and your code is considered as a good code when it has
+                        loosely-coupled classes. Loosely coupled classes minimize changes in your code, helps in making
+                        code more reusable, maintainable, flexible and stable.
+                    </div>
+                </div>
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header">CodeSamples</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <ul class="list-unstyled mb-0">
+                                    <li>Single Responsibility Principle (SRP)</li>
+                                    <pre><code>class Add:
+    @staticmethod
+    def add(num1, num2):
+        add_res = num1 + num2
+        return add_res
+        return add_res</code></pre>
+                                    <li>Open/Closed Principle</li>
+                                    <pre><code>class Add:
+    @staticmethod
+    def add(num1, num2):
+        add_res = num1 + num2
+        return add_res
+        return add_res</code></pre>
+                                    <li>Liskov’s Substitution Principle</li>
+                                    <pre><code>from calculator.operations import Add, Sub, Mul, Div
+class Calculator:
+    """ The Base abstract class for calculation"""
+
+    num_list = []
+
+    def __init__(self, num_list):
+        """constructor for calculation class"""
+        self.num_list = num_list
+        self.values_list = Calculator.float_conversion(num_list)
+
+    @classmethod
+    def create(cls, num_list):
+        return cls(num_list)</code></pre>
+                                    <li>Interface Segregation Principle</li>
+                                    <li>Dependency Inversion Principle</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widget-->
+                <div class="card mb-4">
+                    <div class="card-header">References</div>
+                    <div class="card-body">
+                        https://www.geeksforgeeks.org/solid-principle-in-programming-understand-with-real-life-examples/
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Thank You</p></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    </body>
+    </html>
+{% endblock %}

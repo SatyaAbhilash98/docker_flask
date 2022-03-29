@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% block content %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Blog Post - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+    <!-- Page content-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Post content-->
+                <article>
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">AAA Testing and Importance</h1>
+                        <!-- Post meta content-->
+                        <div class="text-muted fst-italic mb-2">Posted on March 25, 2022 by Satya Abhilash</div>
+                    </header>
+                    <!-- Preview image figure-->
+                    <figure class="mb-4">
+                        <img src="{{ url_for('static', filename='images/aaa.png') }}" class="d-block w-100" alt="...">
+                    </figure>
+                    <!-- Post content-->
+                    <section class="mb-5">
+                        <p>What is AAA Testing :</p>
+                        <p>
+                            A test is a procedure that exercises a behavior to determine if the behavior functions
+                            correctly. There are several different kinds of tests, like unit tests, integration tests,
+                            or end-to-end tests, but all functional tests do the same basic thing: they try something
+                            and report PASS or FAIL.
+                        </p>
+
+                        <p> Testing provides an empirical feedback loop for development. That’s how testing keeps us
+                            safe. With tests, we know when things break. Without tests, coding can be dangerous. We
+                            don’t want to deploy big ol’ bugs! </p>
+
+                        <p> So, if we intend to spend time writing tests, how can we write good tests? There’s a
+                            simple but powerful pattern I like to follow: Arrange-Act-Assert. </p>
+
+                        </p>
+                        <p>Why is AAA Testing Important?</p>
+                        <p>
+                            Unit testing ensures that all code meets quality standards before it's deployed. This
+                            ensures a reliable engineering environment where quality is paramount. Over the course of
+                            the product development life cycle, unit testing saves time and money, and helps developers
+                            write better code, more efficiently.
+                        </p>
+                        <p>AAA Testing's order of operations :</p>
+                        <p>Step 1:</p>
+                        <p>
+                            Arrange inputs and targets. Arrange steps should set up the test case. Does the test
+                            require any objects or special settings? Does it need to prep a database? Does it need to
+                            log into a web app? Handle all of these operations at the start of the test.
+
+                        </p>
+                        <p>Step 2:</p>
+                        <p>
+                            Act on the target behavior. Act steps should cover the main thing to be tested. This could
+                            be calling a function or method, calling a REST API, or interacting with a web page. Keep
+                            actions focused on the target behavior.
+                        </p>
+                        <p>Step 3:</p>
+                        <p>
+                            Assert expected outcomes. Act steps should elicit some sort of response. Assert steps
+                            verify the goodness or badness of that response. Sometimes, assertions are as simple as
+                            checking numeric or string values. Other times, they may require checking multiple facets of
+                            a system. Assertions will ultimately determine if the test passes or fails. Every major
+                            programming language has at least one test framework. Frameworks like JUnit, NUnit,
+                            Cucumber, and (my favorite) pytest enable you, as the programmer, to automate tests, execute
+                            suites, and report results. However, the framework itself doesn’t make a test case “good” or
+                            “bad.” You, as the tester, must know how to write good tests. Arrange-Act-Assert is powerful
+                            because it is simple. It forces tests to focus on independent, individual behaviors. It
+                            separates setup actions from the main actions. It requires test to make verifications and
+                            not merely run through motions. Notice how the pattern is not Arrange-Act-Assert-Act-Assert
+                            – subsequent actions and assertions belong in separate tests! Arrange-Act-Assert is a great
+                            pattern to follow for writing good functional tests.
+                        </p>
+                    </section>
+                </article>
+
+            </div>
+            <!-- Side widgets-->
+            <div class="col-lg-4">
+                <!-- Search widget-->
+                <div class="card mb-4">
+                    <div class="card-header">What is AAA</div>
+                    <div class="card-body">
+                        Arrange Act Asset
+                        The AAA (Arrange-Act-Assert) pattern has become almost a standard across the industry. It
+                        suggests that you should divide your test method into three sections: arrange, act and assert.
+                        Each one of them only responsible for the part in which they are named after.
+                    </div>
+                </div>
+                <!-- Categories widget-->
+                <div class="card mb-4">
+                    <div class="card-header">Contents</div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <ul class="list-unstyled mb-0">
+                                    <li>What is AAA Testing</li>
+                                    <li>Why is AAA Testing Important</li>
+                                    <li>AAA Testing's order of operations</li>
+                                    <pre><code>
+                                        def num_list():
+    """Arranging for AAA Testing"""
+    return 1.0, 2
+
+
+def testing_add_method():
+    """Testing the Calculator"""
+    # Act for AAA testing
+
+    result = CalculatorMain.add(num_list())
+
+    # Assert for AAA testing
+    assert result == 3
+
+                                    </code></pre>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Side widget-->
+                <div class="card mb-4">
+                    <div class="card-header">References</div>
+                    <div class="card-body">
+                        https://docs.microsoft.com/en-us/visualstudio/test/unit-test-basics?view=vs-2022
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container"><p class="m-0 text-center text-white">Thank You</p></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    </body>
+    </html>
+{% endblock %}

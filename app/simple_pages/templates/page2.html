@@ -28,9 +28,8 @@
                         <div class="text-muted fst-italic mb-2">Posted on March 1, 2022 by Satya Abhilash</div>
                     </header>
                     <!-- Preview image figure-->
-                    <figure class="mb-4"><img class="img-fluid rounded"
-                                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/1200px-Flask_logo.svg.png"
-                                              alt="..."/>
+                    <figure class="mb-4">
+                        <img src="{{ url_for('static', filename='images/flask.png') }}" class="d-block w-100" alt="...">
                     </figure>
                     <!-- Post content-->
                     <section class="mb-5">
