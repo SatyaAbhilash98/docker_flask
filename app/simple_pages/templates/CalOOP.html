@@ -171,12 +171,28 @@
                     <div class="card-header">CodeSamples</div>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col">
                                 <ul class="list-unstyled mb-0">
                                     <li>Encapsulation</li>
+                                    <pre><code>class Summation(Calculator):
+    def calculate_res(self):
+        sum_values = 0.0
+        for num in self.values_list:
+            sum_values = Add.add(num, sum_values)
+        return sum_values
+            </code></pre>
                                     <li>Inheritance</li>
+                                    from calculator.operations import Add, Sub, Mul, Div
                                     <li>Abstraction</li>
+                                     <pre><code>
+def add(num_list):
+
+    calculation = Summation.create(num_list)
+    return calculation.calculate_res()
+
+            </code></pre>
                                     <li>Polymorphism</li>
+                                    We did not use polymorphism in calculator program
                                 </ul>
                         </div>
                     </div>

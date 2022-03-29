@@ -7,7 +7,7 @@
 <<<<<<< HEAD
 =======
 
->>>>>>> fdc79ed850ddfd98f4000db35a79e774310b476e
+
 ## Setting up CI/CD
 
 1. Clone this repo to your local (DO NOT FORK THIS REPO, IF YOU DO YOU HAVE TO ENABLE ACTIONS BEFORE ANYTHING RUNS)
